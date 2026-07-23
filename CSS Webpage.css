@@ -1,0 +1,148 @@
+/*Lim Jinjie 2590202-BCS*/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(39, 39, 39);
+    color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.photoframe {
+    position: relative;
+    margin-top: 8px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color:aquamarine;
+    font-size: 20px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color:aquamarine;
+    font-size: 20px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:aquamarine;
+    font-size: 20px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color:aquamarine;
+    font-size: 20px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color:aquamarine;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    margin: 16px 0 62px 0;
+    padding-top: 24px;
+    border-top: 2px solid grey;
+}
+
+section {
+    grid-row: span 2 / span 2;
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+article {
+    padding: 16px;
+    text-align: center;
+    background-color: aliceblue;
+    border: solid 1px cyan;
+    border-radius: 6px;
+}
+
+article p {
+    text-align: justify;
+}
+
+aside {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px cyan;
+    border-radius: 6px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 920px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

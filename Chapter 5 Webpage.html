@@ -1,0 +1,54 @@
+<!DOCTYPE html>  <!--Lim Jinjie 2590202-BCS-->
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS Webpage.css">
+    </head>
+
+    <body>
+        <h1>Tech Academy Blog</h1> 
+        <nav>
+            <a href="#">Home</a>   |   <a href="#">Tutorials</a>   |   <a href="#">Contact</a>
+        </nav>
+        
+        <div class="photoframe">
+            <img src="wallpaper-arknights-endfield-based-on-the-latest-trailer-v0-g5rimu000r6g1.png" alt="Arkknight Endfield Landscape" width="100%" height="auto">
+            <div class="top-left">Top Left</div>
+            <div class="top-right">Top Right</div>
+            <div class="center">Center</div>
+            <div class="bottom-left">Bottom Left</div>
+            <div class="bottom-right">Bottom Right</div>
+        </div>
+
+        <main>
+            <section>
+                <article>
+                    <h2>Learning HTML Layouts</h2>
+                    <p>HTML layout elements define different parts of a web page. In modern web development, creating a structured layout is essential for ensuring a seamless user experience across various devices. Historically, developers relied on HTML tables or CSS floats to arrange content, which was often rigid, brittle, and incredibly difficult to maintain over time.</p>
+                    <p>As the web evolved, web standards introduced dedicated semantic structural tags. When combined with powerful modern styling tools like CSS Flexbox and CSS Grid, these elements allow developers to build highly complex, responsive interfaces. Flexbox is uniquely suited for one-dimensional layouts (aligning items in a single row or column), while CSS Grid excels at two-dimensional layouts, giving you precise control over both horizontal rows and vertical columns simultaneously.</p>
+                    <p>Mastering these layout methodologies is critical for modern front-end development. It ensures that your website content fluidly adapts, scales, wraps, and repositions itself flawlessly, whether a user is viewing it on a compact smartphone screen, a mid-sized tablet, or a massive ultrawide desktop monitor.</p>
+                </article>
+
+                <article>
+                    <h2>What is Semantic HTML?</h2>
+                    <p>A semantic element clearly describes its meaning to both the browser and the developer. Non-semantic elements like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> act merely as generic containers, telling us absolutely nothing about the content inside them. Conversely, semantic elements like <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;header&gt;</code> explicitly state their purpose and the nature of the data they hold.</p>
+                    <p>Adopting a semantic-first approach to your markup is crucial for three major reasons. First, it drastically improves web accessibility (often abbreviated as a11y), allowing screen readers and assistive technologies to meaningfully parse and navigate your page structure for visually impaired users. Second, it significantly boosts your Search Engine Optimization (SEO). Search engine crawlers rely heavily on these tags to understand which parts of your page represent core content versus peripheral details, directly impacting your search rankings.</p>
+                    <p>Finally, semantic HTML ensures your code remains highly maintainable and clean. When working in large engineering teams, having a standardized, self-documenting structure makes it infinitely easier for multiple developers to read, debug, audit, and scale the codebase without guessing the intent behind nested layers of generic containers.</p>
+                </article>
+
+                <article>
+                    <h2>Advanced Layout Architecture & Best Practices</h2>
+                    <p>When engineering production-ready websites, layout testing requires looking closely at how components behave under heavy content loads. A robust layout should never break, overlap text, or cause unwanted horizontal scrolling when new articles are dynamically injected into the Document Object Model (DOM).</p>
+                    <p>Using fluid typography (with units like <code>vw</code>, <code>rem</code>, or <code>em</code>) alongside defensive CSS properties like <code>min-height</code>, <code>max-width</code>, and <code>overflow-wrap</code> guarantees that your layout components containerize text gracefully. Always test your layouts by varying the volume of text inside your semantic blocks to ensure your structural elements hold up under real-world data stress.</p>
+                </article>
+            </section>
+            <aside>
+                <h3>Quick Links</h3>
+                <p>Check out our recommended reading links here.</p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© 2026 Tech Academy. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
